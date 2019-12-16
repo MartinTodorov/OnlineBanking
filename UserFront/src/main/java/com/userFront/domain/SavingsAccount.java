@@ -9,7 +9,7 @@ public class SavingsAccount {
     private int accountNumber;
     private BigDecimal accountBalance;
     
-    private List<SavingTransaction> savingTransactionList;
+    private List<SavingsTransaction> savingTransactionList;
 
 	public Long getId() {
 		return id;
@@ -35,11 +35,11 @@ public class SavingsAccount {
 		this.accountBalance = accountBalance;
 	}
 
-	public List<SavingTransaction> getSavingTransactionList() {
+	public List<SavingsTransaction> getSavingTransactionList() {
 		return savingTransactionList;
 	}
 
-	public void setSavingTransactionList(List<SavingTransaction> savingTransactionList) {
+	public void setSavingTransactionList(List<SavingsTransaction> savingTransactionList) {
 		this.savingTransactionList = savingTransactionList;
 	}
     
