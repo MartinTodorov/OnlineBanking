@@ -23,12 +23,13 @@ public class HomeController {
 	
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
     public String signup(Model model) {
-        User user = new User(); // bind the initialized user
+		User user = new User(); // bind the initialized user
 
         model.addAttribute("user", user); // reference this User object to the variable user in signup.html
 
         return "signup";
     }
+	
 	
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
     public void signupPost(@ModelAttribute("user") User user,  Model model) {
